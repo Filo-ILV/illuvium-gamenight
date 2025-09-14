@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
-import heroBg from "@/assets/illuvium-hero-bg.jpg";
-import ilvTokenLogo from "@/assets/ilv-token-logo.webp";
+import heroBg from "@/assets/illuvium-coins-bg.png";
 
 interface HeroSectionProps {
   className?: string;
@@ -29,15 +28,6 @@ export function HeroSection({ className }: HeroSectionProps) {
       <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-gradient-secondary rounded-full animate-float opacity-40" style={{ animationDelay: "1s" }} />
       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <div className="mb-8 flex justify-center">
-          <img 
-            src={ilvTokenLogo} 
-            alt="ILV Token Logo" 
-            className="w-24 h-24 animate-glow-pulse"
-            style={{ backgroundColor: 'transparent', mixBlendMode: 'multiply' }}
-          />
-        </div>
-        
         <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
           ILLUVIUM
         </h1>
