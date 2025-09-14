@@ -33,7 +33,7 @@ export function HeroSection({ className }: HeroSectionProps) {
           <img 
             src={ilvTokenLogo} 
             alt="ILV Token Logo" 
-            className="w-24 h-24 animate-glow-pulse"
+            className="w-24 h-24 animate-glow-pulse bg-transparent"
           />
         </div>
         
