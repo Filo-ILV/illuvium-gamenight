@@ -9,6 +9,7 @@ import {
   Coins,
   Clock
 } from "lucide-react";
+import ilvTokenLogo from "@/assets/ilv-token-logo.webp";
 
 export function GamenightOverview() {
   const responsibilities = [
@@ -85,6 +86,15 @@ export function GamenightOverview() {
   return (
     <section className="py-20 px-6 bg-gradient-cosmic">
       <div className="max-w-7xl mx-auto">
+        {/* ILV Token Logo */}
+        <div className="text-center mb-12">
+          <img 
+            src={ilvTokenLogo} 
+            alt="ILV Token Logo" 
+            className="w-32 h-32 mx-auto mb-8"
+          />
+        </div>
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
             Responsibilities & Deliverables
