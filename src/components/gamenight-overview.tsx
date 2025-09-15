@@ -96,7 +96,7 @@ export function GamenightOverview() {
         </div>
         
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent leading-tight">
             Illuvium Game Nights
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
