@@ -18,21 +18,10 @@ export function GamenightOverview() {
       icon: <Megaphone className="w-6 h-6" />,
       content: (
         <>
+          <p><strong>Objective:</strong> Disseminate the Gamenight to the community and attract participants.</p>
           <p><strong>Platform:</strong> Twitter (X)</p>
-          <p><strong>Content:</strong> Publication of the Gamenight announcement with essential information including date, time, basic participation rules, and registration/access instructions.</p>
-          <p><strong>Requirement:</strong> Advance notice is essential for better distribution of the Gamenight schedule.</p>
-        </>
-      )
-    },
-    {
-      title: "Gamenight Report",
-      icon: <FileText className="w-6 h-6" />,
-      content: (
-        <>
-          <p><strong>Documentation:</strong> Recording or Post-Gamenight X Post (video on Google Drive or X post with recording/stream VOD)</p>
-          <p><strong>Data Collection:</strong> Report average number of active players with participation proof (game logs, lobby screenshots)</p>
-          <p><strong>Proof Requirements:</strong> Players must prove participation via screenshot or screen sharing</p>
-          <p><strong>Format:</strong> Document (PDF/Google Docs) or presentation compiling all information and links</p>
+          <p><strong>Content:</strong> Publication of the Gamenight announcement, containing essential information such as date, time, basic participation rules, and registration/access instructions.</p>
+          <p><strong>Advance Notice:</strong> Advance notice of the date is essential for better distribution of the Gamenight schedule.</p>
         </>
       )
     },
@@ -41,45 +30,41 @@ export function GamenightOverview() {
       icon: <Share2 className="w-6 h-6" />,
       content: (
         <>
-          <p><strong>Platforms:</strong> Content on at least one platform: Twitter (X), YouTube, Instagram, TikTok</p>
-          <p><strong>Objective:</strong> Generate buzz and visibility for Illuvium and the Gamenight through organic content</p>
-          <p><strong>Requirements:</strong> Content should be creative and relevant to the gaming event</p>
+          <p><strong>Objective:</strong> Generate buzz and visibility for Illuvium and the Gamenight through organic content.</p>
+          <p><strong>Platforms:</strong> Content created on at least one of the following platforms: Twitter (X), YouTube, Instagram, TikTok.</p>
+          <p><strong>Content:</strong> Content should be creative and relevant, and may include:</p>
+          <ul className="list-disc list-inside mt-2 space-y-1">
+            <li>Gamenight highlights</li>
+            <li>Quick tutorials on the game or strategies</li>
+            <li>Player reactions or comments on the experience</li>
+            <li>Memes or short videos related to Illuvium</li>
+          </ul>
         </>
       )
     },
     {
-      title: "Feedback Collection",
-      icon: <MessageCircle className="w-6 h-6" />,
-      content: (
-        <>
-          <p><strong>Purpose:</strong> Obtain valuable insights into community experience and identify improvement areas</p>
-          <p><strong>Content:</strong> Feedback report including number of players, bug reports, and other relevant points</p>
-          <p><strong>Goal:</strong> Improve the game and future campaigns based on community input</p>
-        </>
-      )
-    },
-    {
-      title: "Player Selection for LATAM Tournament",
-      icon: <Users className="w-6 h-6" />,
-      content: (
-        <>
-          <p><strong>Objective:</strong> Identify and select 8 community members for the upcoming LATAM tournament</p>
-          <p><strong>Selection Process:</strong> Description of process used (lottery, pre-competition, nomination)</p>
-          <p><strong>Deliverable:</strong> List of 8 selected players with selection methodology</p>
-        </>
-      ),
-      variant: "highlight" as const
-    },
-    {
-      title: "Engagement with Illuvium Channels",
+      title: "Engagement with Illuvium's X and Discord",
       icon: <Heart className="w-6 h-6" />,
       content: (
         <>
+          <p><strong>Objective:</strong> Increase community interaction and engagement with Illuvium's official channels.</p>
           <p><strong>Platforms:</strong> Twitter (X) and Illuvium's official Discord</p>
-          <p><strong>Activities:</strong> Encourage participants to follow official Twitter and join Discord server</p>
-          <p><strong>Methods:</strong> Verbal reminders, in-game chat messages, or streaming platform announcements</p>
+          <p><strong>Activities:</strong> During the Gamenight, it is essential for the community to encourage participants to follow Illuvium's official Twitter (X) profile and join the official Discord server. This can be done through verbal reminders, in-game chat messages, or on the streaming platform.</p>
         </>
       )
+    },
+    {
+      title: "Player Selection for the upcoming LATAM Tournament",
+      icon: <Users className="w-6 h-6" />,
+      content: (
+        <>
+          <p><strong>Objective:</strong> Identify and select 8 community members that will participate in the upcoming LATAM tournament.</p>
+          <p><strong>Number of Players:</strong> 8 selected members</p>
+          <p><strong>Selection Process:</strong> Description of the process used to select players (e.g., lottery, pre-competition, nomination)</p>
+          <p><strong>Player list:</strong> List of the 8 selected players</p>
+        </>
+      ),
+      variant: "highlight" as const
     }
   ];
 
@@ -121,24 +106,37 @@ export function GamenightOverview() {
         </div>
 
         {/* Budget and Schedule Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <InfoCard
-            title="Budget Allocation"
+            title="Budget"
             icon={<Coins className="w-6 h-6" />}
             variant="highlight"
           >
-            <p><strong>Amount:</strong> 20 ILV (Illuvium token) per community</p>
-            <p><strong>Purpose:</strong> Cover expenses related to organizing the Gamenight including prizes for winners, streaming costs, and operational expenses</p>
-            <p><strong>Reporting:</strong> Communities must submit a brief financial report detailing budget usage</p>
+            <p>Each community will receive a budget of <strong>20 ILV (Illuvium token)</strong>. This amount is intended to cover expenses related to organizing the Gamenight, such as prizes for winners, streaming costs (if applicable), or other operational expenses.</p>
+            <p><strong>Reporting:</strong> Communities must submit a brief financial report detailing how the budget was used, along with other deliverables.</p>
+            <p><strong>Additional:</strong> On top of the ILV there will also be some illuvitars given away.</p>
           </InfoCard>
 
           <InfoCard
-            title="Schedule & Duration"
+            title="Schedule and Duration"
             icon={<Clock className="w-6 h-6" />}
           >
-            <p><strong>Minimum Duration:</strong> 2 hours per Gamenight</p>
-            <p><strong>Coordination:</strong> Illuvium team organizes schedule among partner communities</p>
-            <p><strong>Benefits:</strong> Ensures no overlap and all communities have equal opportunity within stipulated period</p>
+            <p>Each Gamenight will have a <strong>minimum duration of 2 hours</strong>. The Illuvium team will be responsible for organizing the schedule among partner communities, ensuring no overlap and that all communities have the opportunity to hold their events within the stipulated period.</p>
+          </InfoCard>
+        </div>
+
+        {/* Illuvium Alliance Program - Full Width */}
+        <div className="mb-8">
+          <InfoCard
+            title="Illuvium Alliance Program"
+            icon={<Users className="w-6 h-6" />}
+            variant="highlight"
+            className="max-w-full"
+          >
+            <p>To host an Illuvium Game Night, communities must register for the <strong>Illuvium Alliance Program</strong> and generate a unique referral code. Only communities with an active social platform of at least <strong>500 followers</strong> are eligible.</p>
+            <p>Every player who uses your code and makes a purchase will earn your community a commission.</p>
+            <p><strong>To create the referral code click the link below:</strong></p>
+            <p className="mt-4 text-primary font-semibold">Create Referral Code</p>
           </InfoCard>
         </div>
       </div>
