@@ -64,7 +64,6 @@ export function GamenightOverview() {
           <p><strong>Player list:</strong> List of the 8 selected players</p>
         </>
       ),
-      variant: "highlight" as const
     }
   ];
 
@@ -98,7 +97,6 @@ export function GamenightOverview() {
               key={index}
               title={item.title}
               icon={item.icon}
-              variant={item.variant}
             >
               {item.content}
             </InfoCard>
@@ -110,7 +108,6 @@ export function GamenightOverview() {
           <InfoCard
             title="Budget"
             icon={<Coins className="w-6 h-6" />}
-            variant="highlight"
           >
             <p>Each community will receive a budget of <strong>20 ILV (Illuvium token)</strong>. This amount is intended to cover expenses related to organizing the Gamenight, such as prizes for winners, streaming costs (if applicable), or other operational expenses.</p>
             <p><strong>Reporting:</strong> Communities must submit a brief financial report detailing how the budget was used, along with other deliverables.</p>
@@ -125,19 +122,25 @@ export function GamenightOverview() {
           </InfoCard>
         </div>
 
-        {/* Illuvium Alliance Program - Full Width */}
-        <div className="mb-8">
-          <InfoCard
-            title="Illuvium Alliance Program"
-            icon={<Users className="w-6 h-6" />}
-            variant="highlight"
-            className="max-w-full"
-          >
-            <p>To host an Illuvium Game Night, communities must register for the <strong>Illuvium Alliance Program</strong> and generate a unique referral code. Only communities with an active social platform of at least <strong>500 followers</strong> are eligible.</p>
-            <p>Every player who uses your code and makes a purchase will earn your community a commission.</p>
-            <p><strong>To create the referral code click the link below:</strong></p>
-            <p className="mt-4 text-primary font-semibold">Create Referral Code</p>
-          </InfoCard>
+        {/* Illuvium Alliance Program - Prominent Section */}
+        <div className="flex justify-center mb-8">
+          <div className="max-w-4xl w-full">
+            <InfoCard
+              title="Illuvium Alliance Program"
+              icon={<Users className="w-6 h-6" />}
+              variant="highlight"
+              className="text-center p-12"
+            >
+              <div className="space-y-4">
+                <p className="text-lg">To host an Illuvium Game Night, communities must register for the <strong>Illuvium Alliance Program</strong> and generate a unique referral code. Only communities with an active social platform of at least <strong>500 followers</strong> are eligible.</p>
+                <p className="text-lg">Every player who uses your code and makes a purchase will earn your community a commission.</p>
+                <p className="text-lg font-semibold">To create the referral code click the link below:</p>
+                <div className="mt-6 p-4 bg-gradient-primary/10 rounded-lg border border-primary/20">
+                  <p className="text-xl font-bold text-primary">Create Illuvium Alliance Program Referral Code</p>
+                </div>
+              </div>
+            </InfoCard>
+          </div>
         </div>
       </div>
     </section>
