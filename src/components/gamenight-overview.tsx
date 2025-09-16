@@ -68,78 +68,148 @@ export function GamenightOverview() {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-cosmic">
+    <section className="py-20 px-6 bg-gradient-cosmic min-h-screen">
       <div className="max-w-7xl mx-auto">
-        {/* ILV Token Logo */}
-        <div className="text-center mb-12">
-          <img 
-            src={ilvTokenLogo} 
-            alt="ILV Token Logo" 
-            className="w-32 h-32 mx-auto mb-8"
-          />
-        </div>
-        
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent leading-tight py-2 md:py-3">
+        {/* Hero Section with ILV Token Logo */}
+        <div className="text-center mb-20">
+          <div className="relative inline-block mb-8">
+            <img 
+              src={ilvTokenLogo} 
+              alt="ILV Token Logo" 
+              className="w-40 h-40 mx-auto drop-shadow-2xl"
+            />
+            <div className="absolute inset-0 bg-gradient-glow opacity-50 blur-xl"></div>
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight py-2 md:py-3">
             Illuvium Game Nights
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-foreground">
             Responsibilities & Deliverables
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Each community partner has specific responsibilities to ensure successful Gamenight events that benefit the entire Illuvium ecosystem.
           </p>
+          
+          {/* Decorative separator */}
+          <div className="flex items-center justify-center mt-12 mb-8">
+            <div className="h-px bg-gradient-primary w-32"></div>
+            <div className="w-3 h-3 bg-primary rounded-full mx-4 shadow-neon"></div>
+            <div className="h-px bg-gradient-primary w-32"></div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          {responsibilities.map((item, index) => (
+        {/* Main Responsibilities Section */}
+        <div className="mb-24">
+          <h3 className="text-3xl font-bold text-center mb-4 text-foreground">
+            Core Responsibilities
+          </h3>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Four essential activities that every community partner must complete
+          </p>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {responsibilities.map((item, index) => (
+              <div key={index} className="relative">
+                {/* Card number indicator */}
+                <div className="absolute -top-4 -left-4 w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-neon z-10">
+                  {index + 1}
+                </div>
+                <InfoCard
+                  title={item.title}
+                  icon={item.icon}
+                  className="h-full"
+                >
+                  {item.content}
+                </InfoCard>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Budget and Operations Section */}
+        <div className="mb-24">
+          <h3 className="text-3xl font-bold text-center mb-4 text-foreground">
+            Budget & Operations
+          </h3>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Financial details and scheduling information for your Game Night
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <InfoCard
-              key={index}
-              title={item.title}
-              icon={item.icon}
+              title="Budget and Rewards"
+              icon={<Coins className="w-6 h-6" />}
+              className="h-full"
             >
-              {item.content}
+              <div className="space-y-3">
+                <p>Each community will receive a budget of <span className="text-primary font-bold">20 ILV (Illuvium token)</span>.</p>
+                <p><strong>Reporting:</strong> Communities must submit a brief financial report detailing how the budget was used, along with other deliverables.</p>
+                <p><strong>Additional:</strong> Illuvitars will also be given away to everyone that participates.</p>
+              </div>
             </InfoCard>
-          ))}
+
+            <InfoCard
+              title="Schedule and Duration"
+              icon={<Clock className="w-6 h-6" />}
+              className="h-full"
+            >
+              <div className="space-y-3">
+                <p>Each Gamenight will have a <span className="text-primary font-bold">minimum duration of 2 hours</span>.</p>
+                <p>The Illuvium team will be responsible for organizing the schedule among partner communities, ensuring no overlap and that all communities have the opportunity to hold their events within the stipulated period.</p>
+              </div>
+            </InfoCard>
+          </div>
         </div>
 
-        {/* Budget and Schedule Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <InfoCard
-            title="Budget and Rewards"
-            icon={<Coins className="w-6 h-6" />}
-          >
-            <p>Each community will receive a budget of <strong>20 ILV (Illuvium token)</strong>.</p>
-            <p><strong>Reporting:</strong> Communities must submit a brief financial report detailing how the budget was used, along with other deliverables.</p>
-            <p><strong>Additional:</strong> Illuvitars will also be given away to everyone that participates.</p>
-          </InfoCard>
-
-          <InfoCard
-            title="Schedule and Duration"
-            icon={<Clock className="w-6 h-6" />}
-          >
-            <p>Each Gamenight will have a <strong>minimum duration of 2 hours</strong>. The Illuvium team will be responsible for organizing the schedule among partner communities, ensuring no overlap and that all communities have the opportunity to hold their events within the stipulated period.</p>
-          </InfoCard>
-        </div>
-
-        {/* Illuvium Alliance Program - Prominent Section */}
-        <div className="flex justify-center mb-8">
-          <div className="max-w-4xl w-full">
+        {/* Call-to-Action Section - Illuvium Alliance Program */}
+        <div className="text-center">
+          <h3 className="text-4xl font-bold mb-6 text-foreground">
+            Ready to Get Started?
+          </h3>
+          <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Join the Illuvium Alliance Program to unlock your community's potential
+          </p>
+          
+          <div className="max-w-5xl mx-auto">
             <InfoCard
               title="Illuvium Alliance Program"
               icon={<Users className="w-6 h-6" />}
               variant="highlight"
-              className="text-center p-12"
+              className="text-center relative overflow-hidden"
             >
-              <div className="space-y-4">
-                <p className="text-lg">To host an Illuvium Game Night, communities must register for the <strong>Illuvium Alliance Program</strong> and generate a unique referral code. Only communities with an active social platform of at least <strong>500 followers</strong> are eligible.</p>
-                <p className="text-lg">Every player who uses your code and makes a purchase will earn your community a commission.</p>
-                <p className="text-lg font-semibold">To create the referral code click the link below:</p>
-                <div 
-                  onClick={() => window.open('https://illuvidex.illuvium.io/alliance-hub?_gl=1*1fcdr7s*_gcl_au*MTY3Mzg4OTcwMC4xNzU2NzkxODkz', '_blank')}
-                  className="mt-6 p-6 bg-card/90 rounded-xl border-2 border-primary/60 hover:bg-card hover:border-primary/80 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-neon backdrop-blur-sm"
-                >
-                  <p className="text-2xl font-bold text-primary">Create an Illuvium Alliance Program Referral Code</p>
+              {/* Background decoration */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-secondary/10 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-primary/10 rounded-full blur-2xl"></div>
+              
+              <div className="relative z-10 space-y-6">
+                <div className="space-y-4">
+                  <p className="text-lg leading-relaxed">
+                    To host an Illuvium Game Night, communities must register for the <strong className="text-primary">Illuvium Alliance Program</strong> and generate a unique referral code.
+                  </p>
+                  <p className="text-lg leading-relaxed">
+                    Only communities with an active social platform of at least <strong className="text-primary">500 followers</strong> are eligible.
+                  </p>
+                  <p className="text-lg leading-relaxed">
+                    Every player who uses your code and makes a purchase will earn your community a commission.
+                  </p>
+                </div>
+                
+                <div className="pt-6">
+                  <p className="text-lg font-semibold mb-6 text-foreground">
+                    Create your referral code now:
+                  </p>
+                  <div 
+                    onClick={() => window.open('https://illuvidex.illuvium.io/alliance-hub?_gl=1*1fcdr7s*_gcl_au*MTY3Mzg4OTcwMC4xNzU2NzkxODkz', '_blank')}
+                    className="inline-block p-8 bg-gradient-primary/20 rounded-2xl border-2 border-primary/40 hover:bg-gradient-primary/30 hover:border-primary/60 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-neon backdrop-blur-sm group"
+                  >
+                    <p className="text-2xl font-bold text-primary group-hover:text-white transition-colors duration-300">
+                      🚀 Create Alliance Referral Code
+                    </p>
+                    <p className="text-sm text-muted-foreground mt-2 group-hover:text-white/80 transition-colors duration-300">
+                      Click to access the Alliance Hub
+                    </p>
+                  </div>
                 </div>
               </div>
             </InfoCard>
