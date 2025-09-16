@@ -106,7 +106,7 @@ export function GamenightOverview() {
         {/* Budget and Schedule Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <InfoCard
-            title="Budget"
+            title="Budget and Rewards"
             icon={<Coins className="w-6 h-6" />}
           >
             <p>Each community will receive a budget of <strong>20 ILV (Illuvium token)</strong>.</p>
