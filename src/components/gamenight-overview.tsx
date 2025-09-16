@@ -109,9 +109,9 @@ export function GamenightOverview() {
             title="Budget"
             icon={<Coins className="w-6 h-6" />}
           >
-            <p>Each community will receive a budget of <strong>20 ILV (Illuvium token)</strong>. This amount is intended to cover expenses related to organizing the Gamenight, such as prizes for winners, streaming costs (if applicable), or other operational expenses.</p>
+            <p>Each community will receive a budget of <strong>20 ILV (Illuvium token)</strong>.</p>
             <p><strong>Reporting:</strong> Communities must submit a brief financial report detailing how the budget was used, along with other deliverables.</p>
-            <p><strong>Additional:</strong> On top of the ILV there will also be some illuvitars given away.</p>
+            <p><strong>Additional:</strong> Illuvitars will also be given away to everyone that participates.</p>
           </InfoCard>
 
           <InfoCard
