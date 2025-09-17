@@ -52,18 +52,6 @@ export function GamenightOverview() {
           <p><strong>Activities:</strong> During the Gamenight, it is essential for the community to encourage participants to follow Illuvium's official Twitter (X) profile and join the official Discord server. This can be done through verbal reminders, in-game chat messages, or on the streaming platform.</p>
         </>
       )
-    },
-    {
-      title: "Player Selection for the upcoming LATAM Tournament",
-      icon: <Users className="w-6 h-6" />,
-      content: (
-        <>
-          <p><strong>Objective:</strong> Identify and select 8 community members that will participate in the upcoming LATAM tournament.</p>
-          <p><strong>Number of Players:</strong> 8 selected members</p>
-          <p><strong>Selection Process:</strong> Description of the process used to select players (e.g., lottery, pre-competition, nomination)</p>
-          <p><strong>Player list:</strong> List of the 8 selected players</p>
-        </>
-      ),
     }
   ];
 
@@ -84,11 +72,8 @@ export function GamenightOverview() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight py-2 md:py-3">
             Illuvium Game Nights
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-foreground">
-            Responsibilities & Deliverables
-          </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Each community partner has specific responsibilities to ensure successful Gamenight events that benefit the entire Illuvium ecosystem.
+            Welcome to the Illuvium Game Nights program - your gateway to hosting epic community events in the Illuvium universe.
           </p>
           
           {/* Decorative separator */}
@@ -104,11 +89,11 @@ export function GamenightOverview() {
           <h3 className="text-3xl font-bold text-center mb-4 text-foreground">
             Core Responsibilities
           </h3>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Four essential activities that every community partner must complete
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Each community partner has specific responsibilities to ensure successful Gamenight events that benefit the entire Illuvium ecosystem
           </p>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
             {responsibilities.map((item, index) => (
               <div key={index} className="relative">
                 {/* Card number indicator */}
@@ -124,6 +109,66 @@ export function GamenightOverview() {
                 </InfoCard>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Objectives Section */}
+        <div className="mb-24">
+          <h3 className="text-3xl font-bold text-center mb-4 text-foreground">
+            Objectives
+          </h3>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Strategic goals to achieve through your Game Night events
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <InfoCard
+              title="Prepare for the upcoming LATAM Tournament"
+              icon={<Users className="w-6 h-6" />}
+              className="h-full"
+            >
+              <div className="space-y-3">
+                <p><strong>Objective:</strong> Identify and engage community members for potential participation in the upcoming LATAM tournament.</p>
+                <p><strong>Community Building:</strong> Foster competitive spirit and skill development within your community.</p>
+                <p><strong>Engagement:</strong> Create excitement and anticipation for the tournament among your members.</p>
+              </div>
+            </InfoCard>
+
+            <InfoCard
+              title="Expand Illuvium's Player Base"
+              icon={<Users className="w-6 h-6" />}
+              className="h-full"
+            >
+              <div className="space-y-3">
+                <p><strong>Growth:</strong> Attract new players to the Illuvium ecosystem through engaging community events.</p>
+                <p><strong>Onboarding:</strong> Help newcomers understand the game mechanics and ecosystem.</p>
+                <p><strong>Retention:</strong> Create memorable experiences that encourage continued participation.</p>
+              </div>
+            </InfoCard>
+
+            <InfoCard
+              title="Increase Social Presence"
+              icon={<Share2 className="w-6 h-6" />}
+              className="h-full"
+            >
+              <div className="space-y-3">
+                <p><strong>Visibility:</strong> Boost Illuvium's presence across social media platforms.</p>
+                <p><strong>Engagement:</strong> Generate authentic community-driven content and interactions.</p>
+                <p><strong>Reach:</strong> Expand Illuvium's audience through organic social growth.</p>
+              </div>
+            </InfoCard>
+
+            <InfoCard
+              title="Create Quality Content"
+              icon={<FileText className="w-6 h-6" />}
+              className="h-full"
+            >
+              <div className="space-y-3">
+                <p><strong>Content Creation:</strong> Produce high-quality, engaging content about Illuvium gameplay.</p>
+                <p><strong>Educational Value:</strong> Share tutorials, strategies, and insights with the community.</p>
+                <p><strong>Brand Building:</strong> Strengthen the Illuvium brand through positive content representation.</p>
+              </div>
+            </InfoCard>
           </div>
         </div>
 
@@ -156,7 +201,7 @@ export function GamenightOverview() {
             >
               <div className="space-y-3">
                 <p>Each Gamenight will have a <span className="text-primary font-bold">minimum duration of 2 hours</span>.</p>
-                <p>The Illuvium team will be responsible for organizing the schedule among partner communities, ensuring no overlap and that all communities have the opportunity to hold their events within the stipulated period.</p>
+                <p><strong>Scheduling:</strong> To schedule a Game Night, send an email to <span className="text-primary font-bold">pedro.nunes@illuvium.io</span> or connect with Illuvium's Marketing Manager Filo <span className="text-primary font-bold">#179925123065708544</span> through Discord.</p>
               </div>
             </InfoCard>
           </div>
@@ -175,7 +220,6 @@ export function GamenightOverview() {
             <InfoCard
               title="Illuvium Alliance Program"
               icon={<Users className="w-6 h-6" />}
-              variant="highlight"
               className="text-center relative overflow-hidden"
             >
               {/* Background decoration */}
