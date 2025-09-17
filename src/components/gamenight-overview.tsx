@@ -186,55 +186,42 @@ export function GamenightOverview() {
               className="h-full"
             >
               <div className="space-y-3">
-                <p>Each Gamenight will have a <span className="text-primary font-bold">minimum duration of 2 hours</span>.</p>
-                <p><strong>Scheduling:</strong> To schedule a Game Night, send an email to <span className="text-primary font-bold">pedro.nunes@illuvium.io</span> or connect with Illuvium's Marketing Manager <span className="text-primary font-bold">Filo</span> <span className="text-primary font-bold">#179925123065708544</span> through Discord.</p>
+                <p>Each Gamenight will have a <span className="text-primary font-bold">minimum duration of 1 hour</span>.</p>
+                <p><strong>Scheduling:</strong> To schedule a Game Night, fill the Illuvium Game Night Form. Link below.</p>
               </div>
             </InfoCard>
           </div>
         </div>
 
-        {/* Call-to-Action Section - Illuvium Alliance Program */}
+        {/* Call-to-Action Section - Game Night Form */}
         <div className="text-center">
           <h3 className="text-4xl font-bold mb-6 text-foreground">
             Ready to Get Started?
           </h3>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Join the Illuvium Alliance Program to unlock your community's potential
+            Fill the Illuvium Game Night Form to schedule your community event
           </p>
           
           <div className="max-w-5xl mx-auto">
             <InfoCard
-              title="Illuvium Alliance Program"
-              icon={<Users className="w-6 h-6" />}
-              className="text-center relative overflow-hidden"
+              title="Illuvium Game Night Form"
+              icon={<FileText className="w-6 h-6" />}
+              className="text-center"
             >
-              {/* Background decoration */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-secondary/10 rounded-full blur-3xl"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-primary/10 rounded-full blur-2xl"></div>
-              
-              <div className="relative z-10 space-y-6">
+              <div className="space-y-6">
                 <div className="space-y-4">
                   <p className="text-lg leading-relaxed">
-                    Only communities with an active social platform of at least <strong className="text-primary">500 followers</strong> are eligible to host an Illuvium Game Night.
-                  </p>
-                  <p className="text-lg leading-relaxed">
-                    To host an Illuvium Game Night, communities must register for the <strong className="text-primary">Illuvium Alliance Program</strong> and generate a unique referral code.
-                  </p>
-                  <p className="text-lg leading-relaxed">
-                    Every player who uses your code and makes a purchase will earn your community a commission.
+                    Complete the form below to schedule your Illuvium Game Night and receive your event resources.
                   </p>
                 </div>
                 
                 <div className="pt-6">
-                  <p className="text-lg font-semibold mb-6 text-foreground">
-                    Create your referral code now:
-                  </p>
                   <div 
-                    onClick={() => window.open('https://illuvidex.illuvium.io/alliance-hub?_gl=1*1fcdr7s*_gcl_au*MTY3Mzg4OTcwMC4xNzU2NzkxODkz', '_blank')}
+                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdrVWps-e-c0AL_EEiZaI2hhA9ohc1YAhkMxy_LwYquycXY0w/viewform?usp=dialog', '_blank')}
                     className="inline-block p-8 bg-gradient-primary/20 rounded-2xl border-2 border-primary/40 hover:bg-gradient-primary/30 hover:border-primary/60 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-neon backdrop-blur-sm group"
                   >
                     <p className="text-2xl font-bold text-primary group-hover:text-white transition-colors duration-300">
-                      Create Alliance Referral Code
+                      Fill Game Night Form
                     </p>
                   </div>
                 </div>
