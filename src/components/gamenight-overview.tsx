@@ -72,16 +72,6 @@ export function GamenightOverview() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight py-2 md:py-3">
             Illuvium Game Nights
           </h1>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Welcome to the Illuvium Game Nights program - your gateway to hosting epic community events in the Illuvium universe.
-          </p>
-          
-          {/* Decorative separator */}
-          <div className="flex items-center justify-center mt-12 mb-8">
-            <div className="h-px bg-gradient-primary w-32"></div>
-            <div className="w-3 h-3 bg-primary rounded-full mx-4 shadow-neon"></div>
-            <div className="h-px bg-gradient-primary w-32"></div>
-          </div>
         </div>
 
         {/* Main Responsibilities Section */}
@@ -93,17 +83,13 @@ export function GamenightOverview() {
             Each community partner has specific responsibilities to ensure successful Gamenight events that benefit the entire Illuvium ecosystem
           </p>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 gap-8 max-w-5xl mx-auto">
             {responsibilities.map((item, index) => (
               <div key={index} className="relative">
-                {/* Card number indicator */}
-                <div className="absolute -top-4 -left-4 w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg shadow-neon z-10">
-                  {index + 1}
-                </div>
                 <InfoCard
                   title={item.title}
                   icon={item.icon}
-                  className="h-full"
+                  className="h-full hover:shadow-neon transition-all duration-300"
                 >
                   {item.content}
                 </InfoCard>
@@ -201,7 +187,7 @@ export function GamenightOverview() {
             >
               <div className="space-y-3">
                 <p>Each Gamenight will have a <span className="text-primary font-bold">minimum duration of 2 hours</span>.</p>
-                <p><strong>Scheduling:</strong> To schedule a Game Night, send an email to <span className="text-primary font-bold">pedro.nunes@illuvium.io</span> or connect with Illuvium's Marketing Manager Filo <span className="text-primary font-bold">#179925123065708544</span> through Discord.</p>
+                <p><strong>Scheduling:</strong> To schedule a Game Night, send an email to <span className="text-primary font-bold">pedro.nunes@illuvium.io</span> or connect with Illuvium's Marketing Manager <span className="text-primary font-bold">Filo</span> <span className="text-primary font-bold">#179925123065708544</span> through Discord.</p>
               </div>
             </InfoCard>
           </div>
@@ -229,10 +215,10 @@ export function GamenightOverview() {
               <div className="relative z-10 space-y-6">
                 <div className="space-y-4">
                   <p className="text-lg leading-relaxed">
-                    To host an Illuvium Game Night, communities must register for the <strong className="text-primary">Illuvium Alliance Program</strong> and generate a unique referral code.
+                    Only communities with an active social platform of at least <strong className="text-primary">500 followers</strong> are eligible to host an Illuvium Game Night.
                   </p>
                   <p className="text-lg leading-relaxed">
-                    Only communities with an active social platform of at least <strong className="text-primary">500 followers</strong> are eligible.
+                    To host an Illuvium Game Night, communities must register for the <strong className="text-primary">Illuvium Alliance Program</strong> and generate a unique referral code.
                   </p>
                   <p className="text-lg leading-relaxed">
                     Every player who uses your code and makes a purchase will earn your community a commission.
@@ -248,10 +234,7 @@ export function GamenightOverview() {
                     className="inline-block p-8 bg-gradient-primary/20 rounded-2xl border-2 border-primary/40 hover:bg-gradient-primary/30 hover:border-primary/60 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-neon backdrop-blur-sm group"
                   >
                     <p className="text-2xl font-bold text-primary group-hover:text-white transition-colors duration-300">
-                      🚀 Create Alliance Referral Code
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-2 group-hover:text-white/80 transition-colors duration-300">
-                      Click to access the Alliance Hub
+                      Create Alliance Referral Code
                     </p>
                   </div>
                 </div>
