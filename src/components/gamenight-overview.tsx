@@ -174,9 +174,8 @@ export function GamenightOverview() {
               className="h-full"
             >
               <div className="space-y-3">
-                <p>Each community will receive a budget of <span className="text-primary font-bold">20 ILV (Illuvium token)</span>.</p>
-                <p><strong>Reporting:</strong> Communities must submit a brief financial report detailing how the budget was used, along with other deliverables.</p>
-                <p><strong>Additional:</strong> Illuvitars will also be given away to everyone that participates.</p>
+                <p>Each community will receive a budget of 20 ILV (Illuvium token).</p>
+                <p><strong>Additional:</strong> Illuvitars will also be awarded to participants.</p>
               </div>
             </InfoCard>
 
