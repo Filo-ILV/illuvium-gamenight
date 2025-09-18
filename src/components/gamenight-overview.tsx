@@ -210,7 +210,7 @@ export function GamenightOverview() {
               <div className="space-y-6">
                 <div className="space-y-4">
                   <p className="text-lg leading-relaxed">
-                    Complete the form below to schedule your Illuvium Game Night.
+                    Complete the form below to register your community for an Illuvium Game Night event.
                   </p>
                 </div>
                 
