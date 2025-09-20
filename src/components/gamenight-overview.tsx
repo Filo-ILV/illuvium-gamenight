@@ -19,7 +19,7 @@ export function GamenightOverview() {
       content: (
         <>
           <p><strong>Objective:</strong> Disseminate the Gamenight to the community and attract participants.</p>
-          <p><strong>Platform:</strong> Twitter (X)</p>
+          <p><strong>Platform:</strong> Discord and X (Twitter)</p>
           <p><strong>Content:</strong> Publication of the Gamenight announcement, containing essential information such as date, time, basic participation rules, and registration/access instructions.</p>
           <p><strong>Advance Notice:</strong> Advance notice of the date is essential for better distribution of the Gamenight schedule.</p>
         </>
@@ -31,7 +31,7 @@ export function GamenightOverview() {
       content: (
         <>
           <p><strong>Objective:</strong> Generate buzz and visibility for Illuvium and the Gamenight through organic content.</p>
-          <p><strong>Platforms:</strong> Content created on at least one of the following platforms: Twitter (X), YouTube, Instagram, TikTok.</p>
+          <p><strong>Platforms:</strong> Content created on at least one of the following platforms: X (Twitter), YouTube, Instagram, TikTok.</p>
           <p><strong>Content:</strong> Content should be creative and relevant, and may include:</p>
           <ul className="list-disc list-inside mt-2 space-y-1">
             <li>Gamenight highlights</li>
@@ -48,8 +48,8 @@ export function GamenightOverview() {
       content: (
         <>
           <p><strong>Objective:</strong> Increase community interaction and engagement with Illuvium's official channels.</p>
-          <p><strong>Platforms:</strong> Twitter (X) and Illuvium's official Discord</p>
-          <p><strong>Activities:</strong> During the Gamenight, it is essential for the community to encourage participants to follow Illuvium's official Twitter (X) profile and join the official Discord server. This can be done through verbal reminders, in-game chat messages, or on the streaming platform.</p>
+          <p><strong>Platforms:</strong> X (Twitter) and Illuvium's official Discord</p>
+          <p><strong>Activities:</strong> During the Gamenight, it is essential for the community to encourage participants to follow Illuvium's official X (Twitter) profile and join the official Discord server. This can be done through verbal reminders, in-game chat messages, or on the streaming platform.</p>
         </>
       )
     }
