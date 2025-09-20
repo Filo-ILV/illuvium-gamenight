@@ -48,7 +48,7 @@ export function GamenightOverview() {
       content: (
         <>
           <p><strong>Objective:</strong> Increase community interaction and engagement with Illuvium's official channels.</p>
-          <p><strong>Platforms:</strong> X (Twitter) and Illuvium's official Discord</p>
+          <p><strong>Platforms:</strong> Illuvium's official X (Twitter) and Discord</p>
           <p><strong>Activities:</strong> During the Gamenight, it is essential for the community to encourage participants to follow Illuvium's official X (Twitter) profile and join the official Discord server. This can be done through verbal reminders, in-game chat messages, or on the streaming platform.</p>
         </>
       )
